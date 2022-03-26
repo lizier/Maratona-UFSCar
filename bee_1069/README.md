@@ -1,0 +1,3 @@
+# BEE 1069 - Diamantes e Areia
+
+A ideia para ressolver esse exercício é alocar uma pilha com std::stack e adicionar na stack os símbolos "<" e quando encontrar um ">" remover o topo da pilha e adicionar um na varíavel qtdDiamantes (se for possível). A stack é declarada no escopo local determinado pelo loop for principal, assim, a cada interação,uma stack nova e vazia é criada para o próximo caso de teste

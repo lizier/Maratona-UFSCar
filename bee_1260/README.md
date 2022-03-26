@@ -1,0 +1,5 @@
+# BEE 1260 - Espécies de Madeira
+
+Para resolver esse problema, a ideia é ler todas as árvores dadas na entrada e depois ordenar esse vetor com a função sort() disponível na biblioteca algorithm. Uma vez feito isso, todas as arvores iguais estarão agrupadas, assim, basta percorrer esse vetor de ponta a ponta contando as árvores iguais e escrevendo na saida a porcentagem delas no bloco de saida fornecido (o número total de árvores é determinado por um contador chamado j). A complexidade desse algorítmo será O(nlogn) já que a operação mais custosa é ordenar em ordem alfabética as árvores com a função sort().
+
+Uma outra resolução ineficiente seria criar um std::map contendo como chave o nome da árvore e um número associado a quantidade da mesma, caso ainda não exista essa chave, adiciona a mesma no std::map com o valor associado igual a 1. No fim, basta ordenar. Essa solução tem complexidade o(n²) e não passa no juiz do beecrowd.
