@@ -1,5 +1,5 @@
 # Online Judge 11661 - Burguer Time?
-## Solução por : rafabarbeta
+## Solução por : rafaelbarbeta
 A estretégia para resolução do problema é percorrer a string representando a estrada e marcar "pontos de referência" conforme os establecimentos ('R', 'Z', 'R') são achados na string
 
 Inicialemente, devemos percorrer a string cegamente até achar o primeiro estabelecimento na estrada
