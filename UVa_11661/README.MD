@@ -7,7 +7,7 @@ Inicialemente, devemos percorrer a string cegamente até achar o primeiro estabe
 while (estrada[i] != 'D' && estrada[i] != 'Z' && estrada[i] != 'R') i++; 
         status = estrada[i];
 ```
-Ao encontrar um dos três estabelecimentos, a varável status recebe o caractere encontrado.
+Ao encontrar um dos três estabelecimentos, a variável status recebe o caractere encontrado.
 Nesse momento, estamos definindo a posição de referência na estrada como sendo o primeiro estabelecimento encontrado. Cabe destacar que se status = 'Z', então o programa escreve 0 na saída e termina a execução para esse caso de teste.
 Para as próximas posições, existem quatro possibilidades:
 
@@ -16,7 +16,7 @@ Para as próximas posições, existem quatro possibilidades:
  - O caractere lido é um 'Z'. escreve 0 na saída e avança para o próximo caso de teste
  - O caractere lido é diferente de Z e diferente de status, o que significa que encontramos "um par" restaurante-farmácia, portando lemos o contador e comparamos ele com uma variável contendo o mínimo de distância até agora (minDistancia), se o contador for menor, atualizamos o valor de minDistancia. Depois, vamos tomar como ponto de referência esse novo ponto encontrado, atualizando o valor de status para esse novo estabelecimento. É necessário zerar o contador também.
 
-O código que ilustra esse comportamento esta representando abaixo:
+O código que ilustra esse comportamento está representado abaixo:
 ```C++
         for (int j = i; j < tamEstrada; j++) { // i é o valor do primeiro estabelecimento de referência
             if (estrada[j] == '.') {
